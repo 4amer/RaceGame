@@ -1,0 +1,51 @@
+{
+    "name": "Game",
+    "maps": [
+        {
+            "name": "GamePlay",
+            "id": "a10a6d72-3e2a-4d8d-9811-7459c7674d22",
+            "actions": [
+                {
+                    "name": "Swipe",
+                    "type": "PassThrough",
+                    "id": "63486474-a025-48f4-b2f3-a5f15adbc470",
+                    "expectedControlType": "Delta",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "55e74b90-7a3c-4292-928a-2ba247193004",
+                    "path": "<Touchscreen>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Phone",
+                    "action": "Swipe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Phone",
+            "bindingGroup": "Phone",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Sensor>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
